@@ -1,0 +1,514 @@
+/*command, option, M to shrink screen into 320x480px or phone size*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #B8DBEB;
+    color: #666;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#wrapper {
+    background-image: linear-gradient(to bottom, #FFF, #90C7E3);
+    background-repeat: no-repeat;
+    background-color: #90C7E3;
+}
+
+header {
+    background-color: #003;
+    /*bgc#003*/
+    color: #fff;
+    /*c#fff*/
+    text-align: center;
+    /*txac*/
+}
+
+header a {
+    text-decoration: none;
+    /*tdn*/
+}
+
+header a:link {
+    color: #fff;
+    /*c#fff*/
+}
+
+header a:visited {
+    color: #fff;
+}
+
+header a:hover {
+    color: #90C7E3;
+}
+
+h1 {
+    padding-top: 0.5em;
+    /*pt0.5em*/
+    padding-bottom: 0.5em;
+    /*pb0.5em*/
+    letter-spacing: .25em;
+    /*lts.25em*/
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+footer {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+nav {
+    /*background-color: #00c7e3;*/
+    /*float: left; fl*/
+    font-size: 120%;
+    /*fz120%*/
+    font-weight: bold;
+    /*fwb*/
+    padding: 0;
+    /*p0*/
+    text-align: center;
+    /*tac*/
+    /*width: 160px; w160*/
+    /*list-style-position: inside;*/
+}
+
+nav ul {
+    list-style-type: none;
+    /*listn*/
+    margin: 0;
+    /*m0*/
+    padding-left: 0;
+    /*pl0*/
+    font-size: 1.2em;
+    /*fz1.2em*/
+}
+
+nav li {
+    border-bottom: 1px solid #003;
+    /*bb1px solid #003*/
+}
+
+nav a {
+    text-decoration: none;
+    /*tdn*/
+    font-weight: bold;
+    /*fwb*/
+    padding: 10px;
+    /*p10*/
+    transition: color 3s ease-out;
+}
+
+nav a:link {
+    color: #5c7fa3;
+    /*c#5c7fa3*/
+}
+
+nav a:visited {
+    color: #344873;
+    /*c#344873*/
+}
+
+nav a:hover {
+    color: #a42A2a;
+    /*c#a42A2a*/
+}
+
+/*link, visited, and hover must be coded in this order, remember love hate*/
+
+main {
+    padding: 1px 20px 20px 30px;
+    /*p1-20-20-30*/
+    /*text-align: center;*/
+    background-color: #fff;
+    /*bgc#fff*/
+}
+
+.morrobay-image img {
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 15px;
+}
+
+.kayak-image img {
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.kelp-image img {
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.halfmoon-image img {
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+    padding-right: 15px;
+}
+
+.seafood-image img {
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.morrobay-image a {
+    color: #39c;
+    text-decoration: none;
+}
+
+.halfmoon-image a {
+    color: #39c;
+    text-decoration: none;
+}
+
+kelp-image:last-of-type img {
+    display: none;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  margin: auto;
+}
+h2 {
+    color: #39c;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+main ul {}
+
+/*ul {list-style-image: url(/chapter05/chapter5/casestudystarters/pacific/marker.gif);}*/
+
+dt {
+    color: #003;
+}
+
+footer {
+    background-color: #fff;
+    font-size: 75%;
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+}
+
+.resort {
+    color: #5C7fa3;
+    font-weight: bold;
+}
+
+#contact {
+    font-size: 90%;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(../../images/coast2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#yurthero {
+    height: 300px;
+    background-image: url(../../images/yurt.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#trailhero {
+    height: 300px;
+    background-image: url(../../images/trail.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#aboutushero {
+    height: 300px;
+    background-image: url(../../images/pchbigsurfinal.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+table {
+    border: 2px solid #39c;
+    /*bd2px-solid#39c*/
+    border-collapse: collapse;
+    /*bdcc*/
+}
+
+td,
+th {
+    padding: 0.5em;
+    /*p0.5em*/
+    border: 2px solid #39c;
+    /*bd2px-solid#39c*/
+}
+
+td {
+    text-align: center;
+    /*tac*/
+}
+
+.text {
+    text-align: left;
+    /*ta*/
+}
+
+tr:nth-last-of-type(odd) {
+    background-color: #F5FAFC;
+    /*bgc#F5FAFC*/
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap
+}
+
+input,
+textarea {
+    margin-bottom: 0.5em;
+}
+
+video,
+embed {
+    float: right;
+    padding-left: 20px;
+}
+
+/*Create a global style for the gallery image img element*/
+.gallery-image img {
+    border: 2px solid pink;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.aboutgallery-image img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+@media (max-width:426px) {
+
+    #special td,
+    #special th {
+        display: block;
+    }
+
+    #special table {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #special th {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        border: none;
+        overflow: hidden;
+        /*oh*/
+    }
+
+    td.package::before {
+        content: "Package: ";
+    }
+
+    td.description::before {
+        content: "Description: ";
+    }
+
+    td.nights::before {
+        content: "Nights: ";
+    }
+
+    td.cost::before {
+        content: "Cost: ";
+    }
+
+    .package,
+    .description,
+    .nights,
+    .cost {
+        width: 100%;
+        padding-left: 35%;
+        position: relative;
+        text-align: left;
+    }
+
+    td::before {
+        width: 25%;
+        display: block;
+        padding-right: 10px;
+        position: absolute;
+        top: 6px;
+        left: 1em;
+        color: #39c;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+    section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .content main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h2 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 4;
+    }
+
+    .activities {
+        grid-row: 2 / 3;
+        grid-column: auto;
+    }
+
+    .gallery {
+        grid-row: 3 / 4;
+        grid-column: 1 / 4;
+    }
+
+    .aboutgallery {
+        grid-row: 3 / 4;
+        grid-column: 1 / 4;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    /*Add in another row to my existing grid for gallery*/
+    #special {
+        grid-row: auto;
+        grid-column: 1 / 4;
+    }
+
+    footer {
+        grid-row: auto;
+        grid-column: 1 / 4;
+    }
+
+    form {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 6em 1fr;
+        grid-template-rows: auto;
+        width: 60%;
+    }
+
+    input[type="submit"] {
+        grid-column: 2/3;
+        width: 9em;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    nav ul {
+        display: flex;
+        flex-flow: column;
+        padding-top: 1em;
+    }
+
+    nav {
+        text-align: left;
+        padding-left: 1em;
+    }
+
+    #wrapper {
+        margin: auto;
+        width: 80%;
+        border: 1px solid #000033;
+        box-shadow: 1px 1px #000033;
+        display: grid;
+        grid-template-columns: 180px auto;
+        grid-template-rows: auto;
+    }
+
+    /*Nest the gallery grid inside of the main element*/
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        padding: 10px;
+        grid-auto-rows: 150px;
+    }
+
+    .aboutgallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+    header {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+
+    nav {
+        grid-row: 2 / 5;
+        grid-column: 1 / 2;
+    }
+
+    .hero {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    .activities {
+        grid-row: 3 / 4;
+        grid-column: auto;
+    }
+
+    .gallery {
+        grid-row: 4 / 5;
+        grid-column: 1 / 4;
+    }
+
+    .aboutgallery {
+        grid-row: 4 / 5;
+        grid-column: 1 / 4;
+    }
+
+    /*Add in another row to our grid for our 1024px media query*/
+    footer {
+        grid-row: 4 / 5;
+        grid-column: 2 / 3;
+    }
+}
